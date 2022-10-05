@@ -2,9 +2,9 @@ from kafka import KafkaConsumer
 
 # To consume latest messages and auto-commit offsets
 consumer = KafkaConsumer('g5-topic-1',
-                         group_id='my-group',
-                        # b-1.batch6w7.6qsgnf.c19.kafka.us-east-1.amazonaws.com:9092,
-                        # b-2.batch6w7.6qsgnf.c19.kafka.us-east-1.amazonaws.com:9092
+                        #  group_id='my-group',
+                        bootstrap_servers = ['b-1.batch6w7.6qsgnf.c19.kafka.us-east-1.amazonaws.com:9092'],
+                        # bootstrap_servers = ['b-2.batch6w7.6qsgnf.c19.kafka.us-east-1.amazonaws.com:9092'],
                          bootstrap_servers=['localhost:9092'])
 
 for message in consumer:

@@ -5,9 +5,9 @@ from kafka.errors import KafkaError
 import logging
 
 producer = KafkaProducer(
-    bootstrap_servers=['localhost:9092'],
-    # b-1.batch6w7.6qsgnf.c19.kafka.us-east-1.amazonaws.com:9092,
-    # b-2.batch6w7.6qsgnf.c19.kafka.us-east-1.amazonaws.com:9092
+    # bootstrap_servers=['localhost:9092'],
+    bootstrap_servers = ['b-1.batch6w7.6qsgnf.c19.kafka.us-east-1.amazonaws.com:9092'],
+    # bootstrap_servers = ['b-2.batch6w7.6qsgnf.c19.kafka.us-east-1.amazonaws.com:9092'],
     client_id='my-producer',
 )
 
