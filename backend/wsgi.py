@@ -1,5 +1,5 @@
 """Application entry point."""
-from init_app import init_app
+from init_flask_app import init_app
 
 app = init_app()
 
