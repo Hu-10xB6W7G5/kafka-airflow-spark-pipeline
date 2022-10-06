@@ -8,9 +8,9 @@ from json import loads, dumps
 from kafka import KafkaProducer, KafkaConsumer
 from kafka.errors import NoBrokersAvailable
 
-TEXT_TOPIC = "text"
-TEXT_AUDIO_PAIR_TOPIC = "text.audio.pair"
-BROKER_ADDRESS = 'localhost:39092'
+TEXT_TOPIC = "g5-untranscribed-text"
+TEXT_AUDIO_PAIR_TOPIC = "g5-text-audio-pair"
+BROKER_ADDRESS = 'b-1.batch6w7.6qsgnf.c19.kafka.us-east-1.amazonaws.com:9092'
 
 def init_routes(app):
     """A factory function that takes in the server 
